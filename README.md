@@ -1,4 +1,4 @@
-FeedlyWindowTab (based on FeedlyBackgroundTab)
+FeedlyPreviewWindow (based on FeedlyBackgroundTab)
 ===
 
 Are you a power user on Feedly, but annoyed that the 'v' shortcut key opens articles in a focused tab?  This extension fixes that!

@@ -1,8 +1,8 @@
 {
-	"name": "Feedly Window Tab",
+	"name": "Feedly Preview Tab",
 	"version": "0.31",
 	"manifest_version": 3,
-	"description": "Open Feedly Links in a Target Window's Tab using shortcut key",
+	"description": "Open Feedly Links in a Preview Window using shortcut key",
 	"content_scripts": [
 		{
 			"matches": ["*://*.feedly.com/*"],

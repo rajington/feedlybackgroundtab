@@ -56,7 +56,7 @@ chrome.runtime.onInstalled.addListener(function(details) {
 		switch (details.previousVersion) {
 			case "0.1":
 				// big update: added options and customized key
-				url = 'data:text/html,<h1>FeedlyWindowTab Updated!</h1><p>Feedly Background Tab has been updated.  Please check the <a href="https://chrome.google.com/webstore/detail/feedly-background-tab/gjlijkhcebalcchkhgaiflaooghmoegk">extension page</a> for more information.</p>';
+				url = 'data:text/html,<h1>FeedlyPreviewWindow Updated!</h1><p>Feedly Background Tab has been updated.  Please check the <a href="https://chrome.google.com/webstore/detail/feedly-background-tab/gjlijkhcebalcchkhgaiflaooghmoegk">extension page</a> for more information.</p>';
 				break;
 		}
 		if (url) {
