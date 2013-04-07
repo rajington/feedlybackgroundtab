@@ -7,16 +7,42 @@
  */
 
 /**
+ * The id of the target window to open new tabs in
+ * @type {integer}
+ * @private
+ */
+var windowId = chrome.windows.WINDOW_ID_NONE;
+
+/**
  * Add message listener
  *
  * This will open up a new non-focused tab with the url it was sent
  */
 chrome.extension.onMessage.addListener(
 	function(messageObject) {
-		chrome.tabs.create({
-			url: messageObject.url,
-			active: false
-		});
+		// if there is currently no target window to open tabs in
+		if( windowId == chrome.windows.WINDOW_ID_NONE){
+			// create a target window
+			chrome.windows.create({url: messageObject.url}, function(newWindow){
+				// remember its id
+				windowId = newWindow.id;
+				
+				// be notified when windows are closed
+				chrome.windows.onRemoved.addListener(function(closedWindow){
+					// if the target window is the one being closed
+					if(windowId == closedWindow){
+						// forget the target window's id
+						windowId = chrome.windows.WINDOW_ID_NONE;
+					}
+				});
+			});
+		} else {
+			// create a tab on the target window
+			chrome.tabs.create({
+				url: messageObject.url,
+				windowId: windowId
+			});
+		}
 	}
 );
 
