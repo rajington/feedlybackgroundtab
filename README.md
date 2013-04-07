@@ -12,6 +12,8 @@ This isn't a donation - it's a loan from you to those in need.  You get paid bac
 
 *Note: This extension is but a few line changes from Aaron Saray's awesome [feedlybackgroundtab extension](https://github.com/aaronsaray/feedlybackgroundtab). This workflow is something I have sought for a long time, but I wouldn't have been able to do if Aaron hadn't open sourced and documented his extension so well.*
 
+[Get the chrome extension here](https://chrome.google.com/webstore/detail/feedly-preview-window/oodgcldmocgdhjeibiphdlippflhiiea)
+
 Changelog
 ---------
 0.13
