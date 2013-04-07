@@ -1,8 +1,8 @@
 {
-	"name": "Feedly Background Tab",
-	"version": "0.13",
-	"manifest_version": 2,
-	"description": "Open Feedly Links in Background Tab using shortcut key",
+	"name": "Feedly Window Tab",
+	"version": "0.31",
+	"manifest_version": 3,
+	"description": "Open Feedly Links in a Target Window's Tab using shortcut key",
 	"content_scripts": [
 		{
 			"matches": ["*://*.feedly.com/*"],

@@ -1,14 +1,16 @@
-FeedlyBackgroundTab
+FeedlyWindowTab (based on FeedlyBackgroundTab)
 ===
 
 Are you a power user on Feedly, but annoyed that the 'v' shortcut key opens articles in a focused tab?  This extension fixes that!
 
-After installing this extension, when looking at an article in list view, simply press **;** and it will open in a new, background tab.
+After installing this extension, when looking at an article in list view, simply press **;** and it will open in a new preview window. Any additional articles will be opened in the same preview window. This is perfect for large or multiple monitors and offers you a full "reading pane" for your articles.
 
 Want to change your shortcut key?  Simply visit the options page.
 
 **Want to donate or show your appreciation?**  Check out my [Kiva.org Team Page](https://www.kiva.org/team/aaron_saray_open_source_software_team) and join the team.
 This isn't a donation - it's a loan from you to those in need.  You get paid back - continue the cycle to help support people in need.
+
+*Note: This extension is but a few line changes from Aaron Saray's awesome [feedlybackgroundtab extension](https://github.com/aaronsaray/feedlybackgroundtab). This workflow is something I have sought for a long time, but I wouldn't have been able to do if Aaron hadn't open sourced and documented his extension so well.*
 
 Changelog
 ---------
