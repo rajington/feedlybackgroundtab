@@ -20,7 +20,7 @@ var windowId = chrome.windows.WINDOW_ID_NONE;
  * This will open up a new non-focused tab with the url it was sent
  */
 chrome.extension.onMessage.addListener(
-	function(messageObject) {
+	function(messageObject, sender) {
 		// if there is currently no target window to open tabs in
 		if( windowId == chrome.windows.WINDOW_ID_NONE){
 			// create a target window
@@ -42,6 +42,9 @@ chrome.extension.onMessage.addListener(
 			chrome.tabs.create({
 				url: messageObject.url,
 				windowId: windowId
+			}, function(){
+				// refocus the feedly window
+				chrome.windows.update(sender.tab.windowId, {focused: true});
 			});
 		}
 	}

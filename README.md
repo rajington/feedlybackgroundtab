@@ -16,6 +16,9 @@ This isn't a donation - it's a loan from you to those in need.  You get paid bac
 
 Changelog
 ---------
+0.13.1
+* temporary workaround to chromium issue where newly created tabs now gain window focus, for now the feedly window is refocused causing a slight flicker
+
 0.13
 * Fix for another style change.  Thanks @hudochenkov
 
