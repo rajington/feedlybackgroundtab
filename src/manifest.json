@@ -1,6 +1,6 @@
 {
 	"name": "Feedly Preview Window",
-	"version": "0.6",
+	"version": "0.13.2",
 	"manifest_version": 3,
 	"description": "Open Feedly Links in a Preview Window using shortcut key",
 	"content_scripts": [
