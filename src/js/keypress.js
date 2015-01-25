@@ -57,7 +57,7 @@
                         }
                     }
 					if (url) {
-						chrome.extension.sendMessage({url: url.href});
+						chrome.runtime.sendMessage({url: url.href});
 					}
                     else {
                         console.log("Could not find any selectors from: " + selectors.join());
