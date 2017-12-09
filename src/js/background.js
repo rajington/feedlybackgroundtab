@@ -41,10 +41,8 @@ chrome.extension.onMessage.addListener(
 			// create a tab on the target window
 			chrome.tabs.create({
 				url: messageObject.url,
-				windowId: windowId
-			}, function(){
-				// refocus the feedly window
-				chrome.windows.update(sender.tab.windowId, {focused: true});
+				windowId: windowId,
+				active: false,
 			});
 		}
 	}
